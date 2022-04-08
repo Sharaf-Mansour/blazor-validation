@@ -9,21 +9,14 @@ namespace FluentValidationSample.Models
 		public string MiddleNames { get; set; }
 		public string FamilyName { get; set; }
 		public string EmailAddress { get; set; }
-		public List<NamedAddress> Addresses { get; set; }
+		public NamedAddress Addresses { get; set; }
 
 		public Person()
 		{
-			Addresses = new List<NamedAddress>
-			{
-				new NamedAddress
+			Addresses = 	new NamedAddress
 				{
 					Name = "Duplicated address - Home"
-				},
-				new NamedAddress
-				{
-					Name = "Duplicated address - Home"
-				}
-			};
+				};
 		}
 	}
 }

@@ -5,8 +5,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\src\PeterLeslieMorris.Blazor.FluentValidation\PeterLeslieMorris.Blazor.FluentValidation.csproj" />
-		<ProjectReference Include="..\..\..\src\PeterLeslieMorris.Blazor.Validation\PeterLeslieMorris.Blazor.Validation.csproj" />
+	  <PackageReference Include="PeterLeslieMorris.Blazor.FluentValidation" Version="1.7.0" />
+	  <PackageReference Include="PeterLeslieMorris.Blazor.Validation" Version="1.7.0" />
 	</ItemGroup>
+
+	 
 
 </Project>
